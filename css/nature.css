@@ -1,0 +1,43 @@
+.modal-header,
+.modal-body {
+  background-color: #212529;
+  color: white;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+}
+
+.modal-first {
+  width: 90%;
+}
+
+.modal-desc {
+  padding: 25px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1em;
+}
+
+.modal-desc h3 {
+  letter-spacing: 3px;
+  border-bottom: 1px solid white;
+}
+
+.modal-desc p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  .modal-container {
+    flex-direction: column;
+  }
+}

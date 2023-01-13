@@ -1,0 +1,20 @@
+#cosplay {
+  position: relative;
+  display: inline-block;
+}
+
+#cosplay::after {
+  content: "";
+  height: 2px;
+  width: 40%;
+  background: lightgray;
+  position: absolute;
+  left: 33%;
+  bottom: 0;
+}
+
+.col:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  cursor: pointer;
+}

@@ -1,0 +1,110 @@
+#about {
+  position: relative;
+  display: inline-block;
+}
+
+#about::after {
+  content: "";
+  height: 2px;
+  width: 40%;
+  background: lightgray;
+  position: absolute;
+  left: 33%;
+  bottom: 0;
+}
+
+body {
+  text-align: center;
+  height: 150vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  margin-bottom: 5vh;
+}
+
+.banner {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10vw 20vw;
+  background-image: url("https://media.discordapp.net/attachments/1006880100270219314/1029342527582633994/unknown.png?width=1214&height=683");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  margin-bottom: 10vh;
+}
+
+.banner-content {
+  font-family: sans-serif;
+  line-height: 2;
+  color: white;
+  width: 25em;
+  max-width: 100%;
+  font-size: 1.5em;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container h1 {
+  font-weight: 700;
+  padding-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about {
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.first-p + p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 0px 10% 0 10%;
+}
+
+.about + p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 0px 20% 0 20%;
+}
+
+.image {
+  padding: 50px 100px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+@media (max-width: 440px) {
+  .image {
+    padding: 25px 25px 50px 25px;
+  }
+  .about + p,
+  .first-p + p {
+    font-size: 1.2em;
+  }
+}
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #fff);
+  border-radius: 20px;
+}

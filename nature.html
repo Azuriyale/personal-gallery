@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat:wght@100;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+        ></path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path
+          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+        />
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+        />
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path
+          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+        />
+      </symbol>
+    </svg>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Nature</title>
+  </head>
+
+  <body>
+    <!-- NAR BAR -->
+    <nav
+      class="navbar navbar-dark bg-dark navbar-expand-lg bg-faded justify-content-center sticky-top"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex w-50 me-auto">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsingNavbar3"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+          <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="cosplay.html">Cosplay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="random.html">Random</a>
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link active"
+                id="nature"
+                aria-current="page"
+                href="#"
+                >Nature</a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- GALLERY -->
+    <div class="container-g">
+      <div class="image-container-g">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEVQOHQHQZgiLoc8-YB5N7fZ0Q4VJbeYFqTOUH9Cz2iWiyOgrn8pxcXCWUnB68E8MLZGBdyRrjdT5oc-YBGtJ5yvSEUFiL36X-nEQWr9KK-ZhuC0EPCfWWWTJ-dPUqv-dR8KN4h2aaMTiWpvxilHc3C4=w543-h965-no?authuser=1"
+          alt="sun-flower"
+          data-bs-toggle="modal"
+          data-bs-target="#sun-flowerModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEVIfNBNW2MmhTN61INP53tnqVGVb_qjBDqkjDiWdHaHJP65_DidEBKzYaoZ2jUEt-SzsR3GPKpAy9GngApPN3v0jGm-0e8qwSnkD7ZLzjZHH5Y4m-5Y90Hj327wd2cZvO7X02uO5POh3jT8S7LXXspL=w543-h965-no?authuser=1"
+          alt="withering"
+          data-bs-toggle="modal"
+          data-bs-target="#witheringModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEW7I7exigrV4OP5lsISYUjcoq2f8MkvsubW-f7mL9VQrr6klArYuABDbSFa0k-cbpvvpAwxAuQfXluFjFzWGb_GJ-zhchZr7-IHHxGyVZlXWqTcUYAyi3Vxzmt8h8ZUBV4KHeRKKzKFxlTtvIJboX4j=w1287-h965-no?authuser=1"
+          alt="trees"
+          data-bs-toggle="modal"
+          data-bs-target="#treesModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEV-1CogEZpCLoehFmayEUsC6QWXEXA-9SqUOLoeXlDQk7nkT3NT8UjMawOAXB04GQI9qpqMeo27qEoi_jkzvEopOv4bONerQ5qyTu9a1fv140R8h6ZjyGgV8hvVqmmUU2Sxb5PmRk5sjr8gPSUv5mi0=w724-h965-no?authuser=1"
+          alt="tilted"
+          data-bs-toggle="modal"
+          data-bs-target="#tiltedModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEWilR5eCG95LBTE1Ub9IInHey_uhBOOe5hrMvmVr0ijGHlZ_7uMqnoTiD1FcxAIrAn8Nkvdo58PZWiaOAAKnu_eiKRplUXPvapgoOQKUhSHoVPptpZK_hLPcdzA3Fl029NU_ju_GjDXOl_zVDDiU5fl=w724-h966-no?authuser=1"
+          alt="tagaytay"
+          data-bs-toggle="modal"
+          data-bs-target="#tagaytayModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEWqCI5uUzY_Z_Rmho50IgsqUK9aEAEL867mc7sDjJ-rIaaYaBUDa8yTjuPl3XapflI0DWz6UMQrXQBVVPGptjFrJhaMxIDeEkkxMFRkKqAaE4tVX9H67CvaLTSZBxIAQg-f5Rqewig5-9FaoZMtT9HC=w1287-h965-no?authuser=1"
+          alt="sunset"
+          data-bs-toggle="modal"
+          data-bs-target="#sunsetModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEVN259luKRIrYuEGSUJQuAg-BPhk77eOE7SJuLbl5qoher6g0zRzxOS5Tnm_-M2MJSCEaflKomusEj-X0UXL6sGiWwLUb_lbH95w2jPdFVlgR-aoN24RB6vPbX6FhsIMmyCo9EEkHQOFM-r4g229yIj=w1287-h965-no?authuser=1"
+          alt="river"
+          data-bs-toggle="modal"
+          data-bs-target="#riverModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEUGaM_GjvTi_QLh8NJd93JYHf7QrzI3RzpkmRi4RmcJMqIThBFEBQ1PRZ5GHvCg5qnAKC77D0ncDX5boVPxvl5kYH3OxWdBpsUabucxWFsYchbbjATKHwkEJBtcSDrkLuaQ_Vo_hBHZtYabKRMSY3Xp=w1844-h965-no?authuser=1"
+          alt="beach"
+          data-bs-toggle="modal"
+          data-bs-target="#beachModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEV1jp6htwjt0sA8oDW6v9PoJAQLqXnXuQzan_NYXJL6j1NxY2U0fBC0BUpcLTlaDcR0ezrtv7Q0ORr8rN-Mc7l2x-2oXNUwySdSuSlJjP9rzA0j1YsBfT5-53e08aH-mtKyoIt7V2DU4lEesJc9ic-w=w724-h965-no?authuser=1"
+          alt="moon-tree"
+          data-bs-toggle="modal"
+          data-bs-target="#moontreeModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEXoGhddWqOLMiJHgnOCkZ59GPIRr49p2EnY57cT2jSt8zqWl9vSMT66_VE1n3zfVsJHjB9Mnvt1TiSg7FetobXwCGCcqfXNW4OX0ubgGSJydWPXzs-N8kqb3p8DjFGs7W3bDLFUSDzBHl11gtoC1E5n=w543-h965-no?authuser=1"
+          alt="flower"
+          data-bs-toggle="modal"
+          data-bs-target="#flowerModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEXOb7zyiC7Oir-OrGjRWzVcUNMY4Q-mOPI04-d8SSZkV-a-por22qR0j62WpuRgROYJN0wdIG7P8i7AaUULs6sCVtvjIkrABMh2UZ5qBfSnoI_xkHYN81ijZuyi9G_ePXc5Oz0pYTxAgN3rHdiCC1NS=w724-h965-no?authuser=1"
+          alt="water"
+          data-bs-toggle="modal"
+          data-bs-target="#waterModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEXFTI6zA62qe6XQt5QeO4DWgv9kZBWnIPvG6bcRllL89WnqXd2Liq_T9WwKt_1p5w2526bqBBWDrTpzv9Mg4YLs5gi-qap3b74WJ0tHnL6OHKvlFNACVSMowB9dnnhKR58jsNElQMyo8qxHQZ1GNcPx=w773-h965-no?authuser=1"
+          alt="seaside"
+          data-bs-toggle="modal"
+          data-bs-target="#seasideModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEVK3uRopY4o0wVFpbhW-tVcKwl6BEWXG5J9CXDr3uX4qbM1Twyp68FSvpvGAmrYmkaRqmv_PFRGj9CeGXjXvr9_3cTEW_-koGndqRIj7rPyGO6uHydiwE68iXJIvzbWMtkxjPOSKNU5C3OHTdKepVkJ=w543-h965-no?authuser=1"
+          alt="droplets"
+          data-bs-toggle="modal"
+          data-bs-target="#dropletsModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEVRizybiaWBCpwdk7NwkiwK9zpkrTMlUmFdJ3iSse2YUAhyO4xIuP--HitDtl4ojpT7pKrIhGANToAPKNkL-sCSYxB3jO80VmxG63xBntrpwRae34_aOv9FBubj_UVZRiC-i9ikRDXVohuUvbCWsKKJ=s965-no?authuser=1"
+          alt="dam"
+          data-bs-toggle="modal"
+          data-bs-target="#damModal"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/pw/AL9nZEVOVABTeZPmuYVrXwpHVb6Bhh0rXUA1ko_HWjVSOZlq71s9wwNdjM9OPbtB-ntpEbe6_bsR1zTBPc8QEQVQTHFEVvnfrOfHLO9jtyq1tS9CrnecMsrZZW4VunomiLlh7T3ijahN8HYswBXUGUlzvWWh=w1287-h965-no?authuser=1"
+          alt="cloud-9"
+          data-bs-toggle="modal"
+          data-bs-target="#cloud9Modal"
+        />
+      </div>
+    </div>
+
+    <!-- MODALS -->
+    <div class="modals">
+      <div
+        class="modal fade"
+        id="sun-flowerModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEVQOHQHQZgiLoc8-YB5N7fZ0Q4VJbeYFqTOUH9Cz2iWiyOgrn8pxcXCWUnB68E8MLZGBdyRrjdT5oc-YBGtJ5yvSEUFiL36X-nEQWr9KK-ZhuC0EPCfWWWTJ-dPUqv-dR8KN4h2aaMTiWpvxilHc3C4=w543-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="sun-flower"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>July 06, 2019</p>
+                  <h3>Location</h3>
+                  <p>Sarao Motors Inc., Las Pinas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="witheringModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEVIfNBNW2MmhTN61INP53tnqVGVb_qjBDqkjDiWdHaHJP65_DidEBKzYaoZ2jUEt-SzsR3GPKpAy9GngApPN3v0jGm-0e8qwSnkD7ZLzjZHH5Y4m-5Y90Hj327wd2cZvO7X02uO5POh3jT8S7LXXspL=w543-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="withering"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>February 01, 2022</p>
+                  <h3>Location</h3>
+                  <p>Sarao Motors Inc., Las Pinas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="treesModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEW7I7exigrV4OP5lsISYUjcoq2f8MkvsubW-f7mL9VQrr6klArYuABDbSFa0k-cbpvvpAwxAuQfXluFjFzWGb_GJ-zhchZr7-IHHxGyVZlXWqTcUYAyi3Vxzmt8h8ZUBV4KHeRKKzKFxlTtvIJboX4j=w1287-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="trees"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>January 29, 2019</p>
+                  <h3>Location</h3>
+                  <p>Quezon Memorial Circle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="tiltedModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEV-1CogEZpCLoehFmayEUsC6QWXEXA-9SqUOLoeXlDQk7nkT3NT8UjMawOAXB04GQI9qpqMeo27qEoi_jkzvEopOv4bONerQ5qyTu9a1fv140R8h6ZjyGgV8hvVqmmUU2Sxb5PmRk5sjr8gPSUv5mi0=w724-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="tilted"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>August 17, 2019</p>
+                  <h3>Location</h3>
+                  <p>Sarao Motors Inc., Las Pinas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="tagaytayModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEWilR5eCG95LBTE1Ub9IInHey_uhBOOe5hrMvmVr0ijGHlZ_7uMqnoTiD1FcxAIrAn8Nkvdo58PZWiaOAAKnu_eiKRplUXPvapgoOQKUhSHoVPptpZK_hLPcdzA3Fl029NU_ju_GjDXOl_zVDDiU5fl=w724-h966-no?authuser=1"
+                    class="modal-img"
+                    alt="tagaytay"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>December 25, 2020</p>
+                  <h3>Location</h3>
+                  <p>People's Park in the Sky, Tagaytay</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="sunsetModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEWqCI5uUzY_Z_Rmho50IgsqUK9aEAEL867mc7sDjJ-rIaaYaBUDa8yTjuPl3XapflI0DWz6UMQrXQBVVPGptjFrJhaMxIDeEkkxMFRkKqAaE4tVX9H67CvaLTSZBxIAQg-f5Rqewig5-9FaoZMtT9HC=w1287-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="sunset"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>March 19, 2019</p>
+                  <h3>Location</h3>
+                  <p>Seaside Mall of Asia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="sunsetModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEWqCI5uUzY_Z_Rmho50IgsqUK9aEAEL867mc7sDjJ-rIaaYaBUDa8yTjuPl3XapflI0DWz6UMQrXQBVVPGptjFrJhaMxIDeEkkxMFRkKqAaE4tVX9H67CvaLTSZBxIAQg-f5Rqewig5-9FaoZMtT9HC=w1287-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="sunset"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>March 19, 2019</p>
+                  <h3>Location</h3>
+                  <p>Seaside Mall of Asia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="riverModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEVN259luKRIrYuEGSUJQuAg-BPhk77eOE7SJuLbl5qoher6g0zRzxOS5Tnm_-M2MJSCEaflKomusEj-X0UXL6sGiWwLUb_lbH95w2jPdFVlgR-aoN24RB6vPbX6FhsIMmyCo9EEkHQOFM-r4g229yIj=w1287-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="river"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>December 19, 2018</p>
+                  <h3>Location</h3>
+                  <p>Ilocos Norte</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="beachModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEUGaM_GjvTi_QLh8NJd93JYHf7QrzI3RzpkmRi4RmcJMqIThBFEBQ1PRZ5GHvCg5qnAKC77D0ncDX5boVPxvl5kYH3OxWdBpsUabucxWFsYchbbjATKHwkEJBtcSDrkLuaQ_Vo_hBHZtYabKRMSY3Xp=w1844-h965-no?authuser=1"
+                    alt="beach"
+                    class="modal-img"
+                    alt="beach"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>September 15, 2019</p>
+                  <h3>Location</h3>
+                  <p>San Narciso, Zambales</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="moontreeModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEV1jp6htwjt0sA8oDW6v9PoJAQLqXnXuQzan_NYXJL6j1NxY2U0fBC0BUpcLTlaDcR0ezrtv7Q0ORr8rN-Mc7l2x-2oXNUwySdSuSlJjP9rzA0j1YsBfT5-53e08aH-mtKyoIt7V2DU4lEesJc9ic-w=w724-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="moontree"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>January 10, 2019</p>
+                  <h3>Location</h3>
+                  <p>Sarao Motors Inc., Las Pinas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="flowerModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEXoGhddWqOLMiJHgnOCkZ59GPIRr49p2EnY57cT2jSt8zqWl9vSMT66_VE1n3zfVsJHjB9Mnvt1TiSg7FetobXwCGCcqfXNW4OX0ubgGSJydWPXzs-N8kqb3p8DjFGs7W3bDLFUSDzBHl11gtoC1E5n=w543-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="flower"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>April 20, 2022</p>
+                  <h3>Location</h3>
+                  <p>Sarao Motors Inc., Las Pinas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="waterModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEXOb7zyiC7Oir-OrGjRWzVcUNMY4Q-mOPI04-d8SSZkV-a-por22qR0j62WpuRgROYJN0wdIG7P8i7AaUULs6sCVtvjIkrABMh2UZ5qBfSnoI_xkHYN81ijZuyi9G_ePXc5Oz0pYTxAgN3rHdiCC1NS=w724-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="water"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>January 10, 2019</p>
+                  <h3>Location</h3>
+                  <p>Madongan Dam, Ilocos Norte</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="seasideModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEXFTI6zA62qe6XQt5QeO4DWgv9kZBWnIPvG6bcRllL89WnqXd2Liq_T9WwKt_1p5w2526bqBBWDrTpzv9Mg4YLs5gi-qap3b74WJ0tHnL6OHKvlFNACVSMowB9dnnhKR58jsNElQMyo8qxHQZ1GNcPx=w773-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="seaside"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>September 23, 2019</p>
+                  <h3>Location</h3>
+                  <p>Seaside Mall of Asia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="dropletsModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEVK3uRopY4o0wVFpbhW-tVcKwl6BEWXG5J9CXDr3uX4qbM1Twyp68FSvpvGAmrYmkaRqmv_PFRGj9CeGXjXvr9_3cTEW_-koGndqRIj7rPyGO6uHydiwE68iXJIvzbWMtkxjPOSKNU5C3OHTdKepVkJ=w543-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="droplets"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>June 01, 2022</p>
+                  <h3>Location</h3>
+                  <p>Sarao Motors Inc., Las Pinas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="damModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEVRizybiaWBCpwdk7NwkiwK9zpkrTMlUmFdJ3iSse2YUAhyO4xIuP--HitDtl4ojpT7pKrIhGANToAPKNkL-sCSYxB3jO80VmxG63xBntrpwRae34_aOv9FBubj_UVZRiC-i9ikRDXVohuUvbCWsKKJ=s965-no?authuser=1"
+                    class="modal-img"
+                    alt="dam"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>December 21, 2018</p>
+                  <h3>Location</h3>
+                  <p>Madongan Dam, Ilocos Norte</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="cloud9Modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Photo Info
+              </h1>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-container">
+                <div class="modal-first">
+                  <img
+                    src="https://lh3.googleusercontent.com/pw/AL9nZEVOVABTeZPmuYVrXwpHVb6Bhh0rXUA1ko_HWjVSOZlq71s9wwNdjM9OPbtB-ntpEbe6_bsR1zTBPc8QEQVQTHFEVvnfrOfHLO9jtyq1tS9CrnecMsrZZW4VunomiLlh7T3ijahN8HYswBXUGUlzvWWh=w1287-h965-no?authuser=1"
+                    class="modal-img"
+                    alt="cloud9"
+                  />
+                </div>
+                <div class="modal-desc">
+                  <h3>Date Taken</h3>
+                  <p>October 20, 2019</p>
+                  <h3>Location</h3>
+                  <p>Cloud9 Hotel and Resort, Antipolo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+    >
+      <p>© Jhan Marmel 2022</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3">
+          <a
+            class="link-dark"
+            href="https://twitter.com/jhanmarmelous"
+            target="_blank"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter"></use></svg
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a
+            class="link-dark"
+            href="https://www.instagram.com/jhanmarmel"
+            target="_blank"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram"></use></svg
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a
+            class="link-dark"
+            href="https://www.facebook.com/myahjmyahj"
+            target="_blank"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

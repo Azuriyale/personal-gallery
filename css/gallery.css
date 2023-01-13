@@ -1,0 +1,14 @@
+#gallery {
+  position: relative;
+  display: inline-block;
+}
+
+#gallery::after {
+  content: "";
+  height: 2px;
+  width: 40%;
+  background: lightgray;
+  position: absolute;
+  left: 33%;
+  bottom: 0;
+}

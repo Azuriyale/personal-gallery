@@ -1,0 +1,117 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+
+#random,
+#nature {
+  position: relative;
+  display: inline-block;
+}
+
+#random::after,
+#nature::after {
+  content: "";
+  height: 2px;
+  width: 40%;
+  background: lightgray;
+  position: absolute;
+  left: 33%;
+  bottom: 0;
+}
+
+nav {
+  font-size: 1.5em;
+  font-family: "Crimson Text", serif;
+}
+
+.navbar-brand {
+  font-size: 1.1em;
+}
+
+.container-g {
+  max-width: 85%;
+  margin: 50px auto;
+  padding: 30px 30px;
+  border-radius: 0px 30px 0 30px;
+}
+
+.container-g img {
+  padding: 10px;
+  background-color: rgb(33, 37, 41);
+}
+
+.container-g .image-container-g {
+  columns: 3 250px;
+  gap: 15px;
+}
+
+.container-g .image-container-g img {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.container-g .image-container-g img:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.modal-header,
+.modal-body {
+  background-color: #212529;
+  color: white;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-first {
+  width: 70%;
+}
+
+.modal-desc {
+  padding: 25px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1em;
+}
+
+.modal-desc h3 {
+  letter-spacing: 3px;
+  border-bottom: 1px solid white;
+}
+
+.modal-desc p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 450px) {
+  .modal-container {
+    flex-direction: column;
+  }
+  .modal-first {
+    width: 90%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #fff);
+  border-radius: 20px;
+}
